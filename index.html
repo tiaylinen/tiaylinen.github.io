@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>me portfolio :)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="menu">
+            <h1><a href="#top">PORTFOLIO</a></h1>
+            <ul>
+                <li><a href="#top">About me</a></li>
+                <li><a href="#works">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="about">
+        <h1>ABOUT ME</h1>
+        <div class="introduction">
+            <img src="2020-05-16.jpg" alt="my face">
+            <p> Hi! I'm Tia Ylinen, a computer game engineering student at Newcastle University and will be graduating with my master's degree in 2021. 
+                I'm a passionate programmer full of love for both creating and playing video games. I'm interested in the entire development process all the way from design to technical aspects. 
+                I took my first step towards becoming a future game developer in 2017 when I started my undergraduate in computer science. 
+                Ever since then I've had the possibility to familiarise myself with various languages and technologies. 
+                Scroll down to see examples of what I've done so far!
+            </p>
+        </div>
+    </div>
+
+    <div class="works" id="works">
+        <h1>MY PROJECTS</h1>
+
+        <div class="project">
+            <div class="screenshots">
+                <div class="image">
+                    <img src="prototype1.png" alt="prototype 1" style="width: 100%">
+                </div>
+            
+                <div class="image">
+                    <img src="prototype2.png" alt="prototype 2" style="width: 100%">
+                </div>
+            
+                <div class="image">
+                    <img src="prototype3.png" alt="prototype 3" style="width: 100%">
+                </div>
+            </div> 
+            <h2>Prototyping in Unity</h2>
+            <p>I built this prototype to demonstrate features and ideas for a team project. All concepts have been bundled up to a single scene, 
+                but should be separated for the final game. First, there is a falling floors level. In this, the floor tiles start falling off as 
+                the player collides with them and everyone has to try to survive as long as possible. Next up there are some power ups: both positive (green) and 
+                negative (red). The power ups in this prototype can either increase the size or speed of the player, or stop them from moving completely.
+                Lastly, there's some heavy moving obstacles that will knock they player off the platform when collided with. 
+            </p>
+            <div class="links">
+                <a href="https://youtu.be/VEycvoIvQMY">YouTube</a>
+                <a href="https://github.com/tiaylinen/CSC8507">GitHub</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="screenshots">
+                <div class="image">
+                    <img src="gametech1.png" alt="game technologies 1" style="width: 100%">
+                </div>
+            
+                <div class="image">
+                    <img src="gametech2.png" alt="game technologies 2" style="width: 100%">
+                </div>
+            
+                <div class="image">
+                    <img src="gametech3.png" alt="game technologies 3" style="width: 100%">
+                </div>
+            </div> 
+            <h2>C++ game with physics and AI</h2>
+            <p>This game was created as coursework around a codebase we were offered. 
+                When the game is started, the player starts competing against time or against an AI opponent. 
+                The player loses points over time and the final score is based on how much time there is left when the goal is reached. 
+                Using C++ I implemented the gameplay features and physics simulations, such as different types of collision detection and resolution, 
+                forces, position constraints and obstacles of different weights and behaviour. 
+                In addition to this implemented a simple state machine AI the player can choose to play against.
+            </p>
+            <div class="links">
+                <a href="https://www.youtube.com/watch?v=Ua8DleiZAU4">YouTube</a>
+                <a href="https://github.com/tiaylinen/CSC8503">GitHub</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="screenshots">
+                <div class="image">
+                    <img src="graphics1.png" alt="graphics 1" style="width: 100%">
+                </div>
+            
+                <div class="image">
+                    <img src="graphics2.png" alt="graphics 2" style="width: 100%">
+                </div>
+            
+                <div class="image">
+                    <img src="graphics3.png" alt="graphics 3" style="width: 100%">
+                </div>
+            </div> 
+            <h2>Graphics</h2>
+            <p>This graphics coursework was created using C++ and OpenGL. The scene displayed shows a cityscape in a bumpy terrain with a lake outside the city.
+                I created this scene around a codebase and added the textures and bump maps, moving water, the height map to generate the terrain, 
+                the floating and moving triangles, the city and the sky box. The scene uses appropriate shaders to render the implemented features. 
+                All geometry is added to a scene graph for efficiency and practicality. The program also comes with camera tracks to guide the user around the scene.
+            </p>
+            <div class="links">
+                <a href="https://youtu.be/SPPKAXKBiws">YouTube</a>
+                <a href="https://github.com/tiaylinen/CSC8502">GitHub</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="screenshots">
+                <div class="image">
+                    <img src="programming1.png" alt="programming 1" style="width: 100%">
+                </div>
+            
+                <div class="image">
+                    <img src="programming2.png" alt="programming 2" style="width: 100%">
+                </div>
+            
+                <div class="image">
+                    <img src="programming3.png" alt="programming 3" style="width: 100%">
+                </div>
+            </div> 
+            <h2>Maze generator & solver with collaborative pathfinding</h2>
+            <p>
+                This C++ program consists of two parts: first one to generate mazes and find the exits, 
+                and the second part for collaborative pathfinding to move players towards the center of the maze in turns. 
+                The user gets to decide the size of the maze and the number of exits/players. The program uses BFS to find the shortest paths.
+                All mazes are generated so that they are solvable and each exit can be reached.
+                In collaborative pathfinding each player takes a step towards the goal in turns. 
+                If another player gets in the way, that turn is skipped. 
+                In the end the user can choose to save a maze to a file or display a maze that has already been saved. 
+            </p>
+            <div class="links">
+                <a href="https://github.com/tiaylinen/CSC8501">GitHub</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="screenshots">
+                <div class="image">
+                    <img src="quiz1.png" alt="quiz 1" style="width: 100%">
+                </div>
+            
+                <div class="image">
+                    <img src="quiz2.png" alt="quiz 2" style="width: 100%">
+                </div>
+            
+                <div class="image">
+                    <img src="quiz3.png" alt="quiz 3" style="width: 100%">
+                </div>
+            </div> 
+            <h2>Quiz web app</h2>
+            <p> This web app was created using HTML + CSS + JavaScript with React. The user can choose a quiz, answer the questions and see results in the end.
+                For accessibility the quiz can be navigated through both with mouse or with arrows / tab / enter. 
+                After taking a quiz the user can add a comment that other users can see. The comment section is unique to each quiz.
+                The results are calculated simply by which type of answer the user picks most of (a, b, c or d). 
+                The quizzes and comments are saved to a JSON server which the app communicates with using Axios. 
+            </p>
+            <div class="links">
+                <a href="https://quiz-json.herokuapp.com/">Heroku</a>
+                <a href="https://github.com/tiaylinen/Quiz-App-2020">GitHub</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
